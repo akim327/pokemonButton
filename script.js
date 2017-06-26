@@ -50,7 +50,7 @@ function getDataFromAPI(){
         })
     
     for(var i = 20; i < 800; i+=20){
-        url = endpoint + '?offset=' + i;
+        url = `${endpoint}?offset=${i}`;
         fetch(url)
         .then(function(results){
             return results.json()
